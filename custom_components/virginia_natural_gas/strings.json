@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Virginia Natural Gas",
+        "description": "Sign in with the User ID and password you use for My Account at virginianaturalgas.com. The portal locks the account for a while after 5 failed attempts.",
+        "data": {
+          "username": "User ID",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "The portal rejected the password for {username}. Enter the current one. The portal locks the account for a while after 5 failed attempts.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the portal",
+      "invalid_auth": "Invalid User ID or password, or the account is temporarily locked",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This account is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "meter_reading": {
+        "name": "Meter reading"
+      },
+      "last_read_date": {
+        "name": "Last meter read"
+      },
+      "next_read_date": {
+        "name": "Next meter read"
+      },
+      "last_period_usage": {
+        "name": "Last period usage"
+      },
+      "last_period_days": {
+        "name": "Last period length"
+      },
+      "last_period_cost": {
+        "name": "Last period gas charges"
+      },
+      "amount_due": {
+        "name": "Current bill"
+      },
+      "due_date": {
+        "name": "Bill due date"
+      },
+      "last_payment": {
+        "name": "Last payment"
+      },
+      "last_payment_date": {
+        "name": "Last payment date"
+      }
+    }
+  }
+}
